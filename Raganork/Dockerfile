@@ -1,6 +1,6 @@
 FROM souravkl11/raganork:test
 
-RUN git clone https://github.com/Kingmob007/Raganork
+RUN git clone https://github.com/Kingmob007/Raganork/ /skl/raganork
 WORKDIR /skl/raganork 
 ENV TZ = Asia/Kolkata
 RUN npm install supervisor -g
