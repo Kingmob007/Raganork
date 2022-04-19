@@ -39,7 +39,7 @@ Asena.addCommand({pattern: 'sticker$', fromMe: sk, desc: Lang.STICKER_DESC}, (as
                     }
                     else await message.sendMessage(fs.readFileSync('st.webp'), MessageType.sticker);
             });
-       
+        return;
         }
 
         ffmpeg(location)
@@ -56,4 +56,5 @@ Asena.addCommand({pattern: 'sticker$', fromMe: sk, desc: Lang.STICKER_DESC}, (as
                 }
                 else await message.sendMessage(fs.readFileSync('sticker.webp'), MessageType.sticker);
             });
-            }));
+        return;
+    }));
